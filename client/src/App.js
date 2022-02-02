@@ -5,7 +5,7 @@ import React, {useEffect} from 'react'
 function App() {
 
   useEffect(() => {
-    fetch('api/notes')
+    fetch('api/todos')
     .then(res => res.json())
     .then(data => console.log(data))
   }, []);
